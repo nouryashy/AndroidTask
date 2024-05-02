@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_storyboard_a"
+    app:startDestination="@id/universityListFragment">
+
+    <fragment
+        android:id="@+id/universityListFragment"
+        android:name="com.example.a.ui.UniversityListFragment"
+        android:label="UniversityListFragment">
+        <action
+            android:id="@+id/action_universityListFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+
+
+
+</navigation>

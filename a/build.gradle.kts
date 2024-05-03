@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
+    id ("androidx.navigation.safeargs")
     id("kotlin-kapt")
     id("kotlin-android")
     id("dagger.hilt.android.plugin")
@@ -52,9 +53,9 @@ dependencies {
 
 
 //navigation
-    val nav_version = "2.7.7"
-    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
-    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+    val nav_version = "2.5.2"
+    implementation ("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation ("androidx.navigation:navigation-ui-ktx:$nav_version")
 
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")

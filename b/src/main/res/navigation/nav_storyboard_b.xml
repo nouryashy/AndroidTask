@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_storyboard_b">
+    android:id="@+id/nav_storyboard_b"
+    app:startDestination="@id/detailsFragment">
 
-<!--    <fragment-->
-<!--        android:id="@+id/universityListFragment"-->
-<!--        android:name="com.example.a.ui.UniversityListFragment"-->
-<!--        android:label="UniversityListFragment">-->
-<!--        <action-->
-<!--            android:id="@+id/action_universityListFragment_to_detailsFragment"-->
-<!--            app:destination="@id/detailsFragment" />-->
-<!--    </fragment>-->
-<!--    <fragment-->
-<!--        android:id="@+id/detailsFragment"-->
-<!--        android:name="com.example.b.DetailsFragment"-->
-<!--        android:label="DetailsFragment" />-->
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.b.DetailsFragment"
+        android:label="DetailsFragment">
+        <argument
+            android:name="university_id"
+            app:argType="integer" />
+        <argument
+            android:name="university_name"
+            app:argType="string" />
+        <argument
+            android:name="university_country"
+            app:argType="string" />
+        <argument
+            android:name="university_state"
+            app:argType="string" />
 
-
+        <argument
+            android:name="university_country_code"
+            app:argType="string" />
+        <argument
+            android:name="web_page"
+            app:argType="string" />
+    </fragment>
 </navigation>

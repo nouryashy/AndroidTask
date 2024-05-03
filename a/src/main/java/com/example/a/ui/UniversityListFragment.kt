@@ -64,7 +64,10 @@ class UniversityListFragment : Fragment() {
                 for (i in university.web_pages) {
                     universityWebPage = university.web_pages[0]
                 }
-                findNavController().navigate(R.id.action_universityListFragment_to_detailsFragment)
+
+                val action = UniversityListFragmentDirections.actionUniversityListFragmentToDetailsFragment(id,
+                    universityName,,universityCountry,universityState,universityCountryCode,universityWebPage)
+                findNavController().navigate(action)
             }
         }
 

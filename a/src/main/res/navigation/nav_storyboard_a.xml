@@ -11,7 +11,7 @@
         android:label="UniversityListFragment">
         <action
             android:id="@+id/action_universityListFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@+id/detailsFragment"/>
     </fragment>
 
 

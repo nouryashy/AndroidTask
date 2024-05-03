@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.navArgs
 import com.example.b.databinding.FragmentDetailsBinding
 
 class DetailsFragment : Fragment() {
@@ -28,13 +29,13 @@ class DetailsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val args: BooksDetFragmentArgs by navArgs()
-        universityId = args.bookId
-        universityName = args.bookName
-        universityState = args.bookImg
-        universityCountry = args.bookDet
-        universityCountryCode = args.bookDet
-        universityWebPage = args.bookDet
+        val args: DetailsFragmentArgs by navArgs()
+        universityId = args.universityId
+        universityName = args.universityName
+        universityState = args.universityState
+        universityCountry = args.universityCountry
+        universityCountryCode = args.universityCountryCode
+        universityWebPage = args.webPage
 
         fgDetBinding.universityNameTv.text = universityName
         fgDetBinding.universityStateTv.text = universityState
